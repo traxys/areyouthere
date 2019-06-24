@@ -1,13 +1,15 @@
 pkgname="areyouthere"
 pkgver=0.1.0
+pkgrel=1
 pkgdesc="An health server to do things"
 url="https://github.com/traxys/areyouthere"
 arch=("any")
 license=("GPL")
-makedepends=("rust", "git")
-optdepends=("sytstemd")
+makedepends=("rust" "git")
+optdepends=("systemd: using the service file")
 depends=()
 source=('git+https://github.com/traxys/areyouthere.git')
+sha256sums=('SKIP')
 
 build() {
 	cd "${srcdir}/$pkgname"
