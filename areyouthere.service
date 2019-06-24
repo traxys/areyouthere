@@ -4,3 +4,6 @@ After=syslog.target network.target
 
 [Service]
 ExecStart=/usr/bin/areyouthere
+
+[Install]
+WantedBy=multi-user.target
